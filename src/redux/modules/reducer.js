@@ -3,6 +3,7 @@ import multireducer from 'multireducer';
 import { routerReducer } from 'react-router-redux';
 import {reducer as reduxAsyncConnect} from 'redux-async-connect';
 import { pagination } from 'violet-paginator';
+import { loadingBarReducer } from 'react-redux-loading-bar';
 
 import auth from './auth';
 import counter from './counter';
@@ -22,5 +23,6 @@ export default combineReducers({
   }),
   info,
   pagination,
-  widgets
+  widgets,
+  loadingBar: loadingBarReducer
 });

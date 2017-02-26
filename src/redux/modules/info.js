@@ -1,4 +1,4 @@
-const LOAD = 'redux-example/LOAD';
+const LOAD = 'redux-example/LOAD_REQUEST';
 const LOAD_SUCCESS = 'redux-example/LOAD_SUCCESS';
 const LOAD_FAIL = 'redux-example/LOAD_FAIL';
 

@@ -1,9 +1,11 @@
-const LOAD = 'redux-example/widgets/LOAD';
+const LOAD = 'redux-example/widgets/LOAD_REQUEST';
 const LOAD_SUCCESS = 'redux-example/widgets/LOAD_SUCCESS';
 const LOAD_FAIL = 'redux-example/widgets/LOAD_FAIL';
+
 const EDIT_START = 'redux-example/widgets/EDIT_START';
 const EDIT_STOP = 'redux-example/widgets/EDIT_STOP';
-const SAVE = 'redux-example/widgets/SAVE';
+
+const SAVE = 'redux-example/widgets/SAVE_REQUEST';
 const SAVE_SUCCESS = 'redux-example/widgets/SAVE_SUCCESS';
 const SAVE_FAIL = 'redux-example/widgets/SAVE_FAIL';
 

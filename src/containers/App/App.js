@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/lib/Navbar';
 import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
 import Helmet from 'react-helmet';
+import LoadingBar from 'react-redux-loading-bar';
 import { isLoaded as isInfoLoaded, load as loadInfo } from 'redux/modules/info';
 import { isLoaded as isAuthLoaded, load as loadAuth, logout } from 'redux/modules/auth';
 import { InfoBar } from 'components';
@@ -64,6 +65,7 @@ export default class App extends Component {
     return (
       <div className={styles.app}>
         <Helmet {...config.app.head}/>
+        <LoadingBar style={{ zIndex: 9999, position: 'absolute', top: 0, left: 0 }} />
         <Navbar fixedTop>
           <Navbar.Header>
             <Navbar.Brand>
